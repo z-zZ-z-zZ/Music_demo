@@ -1,0 +1,52 @@
+.index>.title {
+    height: 1.8rem;
+    width: 100%;
+    background: #d43c33;
+}
+
+.index .title h1 {
+    font: .5rem/1.8rem '宋体';
+    color: #fff;
+    text-indent: .5rem;
+    display: inline-block;
+}
+
+.index .title span {
+    display: inline-block;
+    width: 1.6rem;
+    height: .6rem;
+    color: #d43c33;
+    background: #fff;
+    border-radius: .4rem;
+    margin-left: 1.4rem;
+    padding: .1rem .2rem;
+    text-align: center;
+    font-size: .3rem;
+    line-height: .6rem;
+}
+
+.index .navBar {
+    display: flex;
+    border-bottom: 1px solid #ccc;
+    height: .8rem;
+    line-height: .8rem;
+}
+
+.index .navBar a {
+    flex: 1;
+    text-align: center;
+    color: #333;
+}
+
+.index .navBar a span {
+    font-size: .32rem;
+}
+
+.index .navBar .active span {
+    color: #dd001b;
+}
+
+.index .navBar .active span {
+    border-bottom:4px solid  #dd001b;
+    padding-bottom: 5px;
+}

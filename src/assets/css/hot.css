@@ -1,0 +1,85 @@
+.hot .title {
+    height: 3rem;
+    width: 100%;
+    background: url(../images/hotBg.jpg);
+    padding-left: 20px;
+}
+
+.hot .title i {
+    display: inline-block;
+    background: url(../images/icon.png) no-repeat;
+    width: 142px;
+    height: 67px;
+    background-position: -24px -30px;
+    background-size: 166px 97px;
+    margin: 20px 0 10px;
+}
+
+.hot .title p {
+    font: .24rem/.24rem '微软雅黑';
+    color: #fff;
+}
+
+.hotList b {
+    font-weight: normal;
+    padding: 0 .2rem 0 .15rem;
+    line-height: 1.2rem;
+    text-align: center;
+    font-size: .35rem;
+    color: #999;
+}
+
+.hotList li {
+    padding-left: .2rem;
+    position: relative;
+}
+
+.hotList li:nth-child(1) b, .hotList li:nth-child(2) b, .hotList li:nth-child(3) b {
+    color: #df3436;
+}
+
+.hotList li {
+    display: flex;
+}
+
+.hotList div {
+    flex: 1;
+    border-bottom: 1px solid #ccc;
+    padding: 5px 0;
+}
+
+.hotList p {
+    font-size: .34rem;
+    width: 6.2rem;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.hotList i {
+    display: inline-block;
+    padding: 2px;
+    background: url(../images/icon.png) no-repeat;
+    background-position: 2px 2px;
+    background-size: 166px 97px;
+    width: 12px;
+    height: 8px;
+}
+
+.hotList span {
+    font-size: .24rem;
+    color: #888;
+    padding-left: .2rem;
+}
+
+.hotList .playVio {
+    position: absolute;
+    right: .15rem;
+    top: 25%;
+    width: 22px;
+    height: 22px;
+    background: url(../images/icon.png) no-repeat;
+    background-position: 10px 20px;
+    background-size: 166px 97px;
+    background-position: -24px 0;
+}

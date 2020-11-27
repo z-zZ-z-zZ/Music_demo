@@ -1,25 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import Index from './pages'
+import List from './pages/list'
+import Play from './pages/play'
+
+import {Switch,Route,Redirect} from 'react-router-dom'
+
+class Pages extends React.Component{
+    render(){
+        return(<div>
+            {/* 一级路由出口 */}
+            <Switch>
+                <Route path='/index' component={Index}></Route>
+                <Route path='/list' component={List}></Route>
+                <Route path='/play' component={Play}></Route>
+                <Redirect to='/index'></Redirect>
+            </Switch>
+        </div>)
+    }
 }
 
-export default App;
+export default Pages
